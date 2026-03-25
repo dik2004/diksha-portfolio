@@ -1,0 +1,60 @@
+/* Custom Styles and Animations */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #020617; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e293b; 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #06b6d4; 
+}
+
+/* Base resets handled by Tailwind, adding a few specific utilities */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-anim {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.slide-up-anim {
+    animation: fadeInUp 1s ease-out 0.2s forwards;
+    opacity: 0;
+}
+
+/* Hover Glow Effects */
+.glow-on-hover:hover {
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.5);
+}
+
+/* Active Nav Link */
+.nav-link.active {
+    color: #06b6d4;
+}
+.mobile-nav-link.active {
+    color: #06b6d4;
+    background-color: #1f2937;
+}

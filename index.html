@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIKSHA-Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#0f172a',
+                        darker: '#020617',
+                        neon: '#06b6d4',
+                        neonHover: '#0891b2'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-darker text-gray-200 font-sans antialiased overflow-x-hidden selection:bg-neon selection:text-white">
+    <nav class="fixed w-full z-50 transition-all duration-300 backdrop-blur-md bg-darker/80 border-b border-gray-800"
+        id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="#home"
+                        class="text-2xl font-bold tracking-tighter text-white hover:text-neon transition-colors duration-300">
+                        Port<span class="text-neon">folio</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home"
+                            class="nav-link text-gray-300 hover:text-neon transition-colors duration-300 px-3 py-2 rounded-md text-base font-medium">Home</a>
+                        <a href="#about"
+                            class="nav-link text-gray-300 hover:text-neon transition-colors duration-300 px-3 py-2 rounded-md text-base font-medium">About</a>
+                        <a href="#projects"
+                            class="nav-link text-gray-300 hover:text-neon transition-colors duration-300 px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                        <a href="#achievements"
+                            class="nav-link text-gray-300 hover:text-neon transition-colors duration-300 px-3 py-2 rounded-md text-base font-medium">Achievements</a>
+                        <a href="#certificates"
+                            class="nav-link text-gray-300 hover:text-neon transition-colors duration-300 px-3 py-2 rounded-md text-base font-medium">Certificates</a>
+                        <a href="#contact"
+                            class="nav-link text-gray-300 hover:text-neon transition-colors duration-300 px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-neon focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-dark border-b border-gray-800">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
+                <a href="#home"
+                    class="mobile-nav-link text-gray-300 hover:text-neon hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#about"
+                    class="mobile-nav-link text-gray-300 hover:text-neon hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#projects"
+                    class="mobile-nav-link text-gray-300 hover:text-neon hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="#achievements"
+                    class="mobile-nav-link text-gray-300 hover:text-neon hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium">Achievements</a>
+                <a href="#certificates"
+                    class="mobile-nav-link text-gray-300 hover:text-neon hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium">Certificates</a>
+                <a href="#contact"
+                    class="mobile-nav-link text-gray-300 hover:text-neon hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 relative">
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-neon opacity-20 blur-[120px] rounded-full pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid md:grid-cols-2 gap-12 items-center z-10">
+            <div class="order-2 md:order-1 text-center md:text-left slide-up-anim">
+                <p class="text-neon font-medium tracking-wide mb-2">Hello, my name is</p>
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight">
+                    DIKSHA RANI
+                </h1>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-400 mb-6 leading-tight">
+                    Turning complex problems into <span class="text-white">elegant web solutions.</span>
+                </h2>
+                <p class="text-gray-400 text-lg md:text-xl mb-8 leading-relaxed max-w-xl mx-auto md:mx-0">
+                    I'm a <span class="text-neon">Full-Stack Web Developer</span> with a strong foundation in
+                    algorithmic problem-solving. I don't just write code—I architect scalable, high-performance digital
+                    experiences.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#projects"
+                        class="px-8 py-3 rounded-full bg-neon text-darker font-semibold hover:bg-neonHover hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(6,182,212,0.4)]">
+                        View Work
+                    </a>
+                    <a href="assets/resume.pdf" download="My_CV.pdf"
+                        class="px-8 py-3 rounded-full border border-neon text-neon font-semibold hover:bg-neon/10 hover:shadow-[0_0_20px_rgba(6,182,212,0.2)] transition-all duration-300 flex items-center justify-center gap-2">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 flex justify-center fade-in-anim">
+                <div
+                    class="relative w-64 h-64 md:w-80 md:h-80 rounded-full p-2 border-2 border-dashed border-neon animate-[spin_20s_linear_infinite] shadow-[0_0_30px_rgba(6,182,212,0.3)]">
+                    <div
+                        class="w-full h-full rounded-full overflow-hidden animate-[spin_20s_linear_infinite_reverse] bg-gray-100 relative group">
+                        <img src="assets/photo.jpg" alt="My Photo"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            style="object-position: center 20%;"
+                            onerror="this.src='https://ui-avatars.com/api/?name=Creative+Dev&background=06b6d4&color=0f172a&size=512'">
+                        <!-- Inner ring to smoothly frame images with harsh white backgrounds -->
+                        <div
+                            class="absolute inset-0 rounded-full shadow-[inset_0_0_20px_rgba(2,6,23,0.5)] ring-4 ring-darker ring-inset pointer-events-none">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-24 relative bg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-16"><span class="text-neon">01.</span> About Me</h2>
+            <div
+                class="max-w-3xl mx-auto text-center space-y-6 text-gray-400 leading-relaxed text-lg mb-20 fade-in-anim">
+                <h3 class="text-2xl md:text-3xl font-semibold text-white mb-8 pb-6 border-b border-gray-800 italic">
+                    "Driven by logic, defined by design. I build applications that <span class="text-neon">perform at
+                        scale.</span>"
+                </h3>
+                <p>
+                    I'm a passionate web developer focused on creating beautifully crafted, user-centric web
+                    applications. I blend design with robust engineering to deliver seamless digital experiences.
+                </p>
+                <p>
+                    My journey in web development started with a fascination for interactive interfaces, supported by a
+                    deep foundation in algorithmic problem-solving. Today, I build scalable full-stack applications with
+                    a keen eye for aesthetics, accessibility, and performance.
+                </p>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white text-center mb-10"><span class="text-neon">Technical</span> Arsenal
+            </h3>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div
+                    class="bg-darker p-8 rounded-xl border border-gray-800 hover:border-neon transition-all duration-300 group hover:-translate-y-2 glow-on-hover">
+                    <div
+                        class="w-12 h-12 rounded-full bg-dark flex items-center justify-center mb-6 border border-gray-700 group-hover:border-neon transition-colors">
+                        <i class="fas fa-code text-xl text-gray-400 group-hover:text-neon"></i>
+                    </div>
+                    <h3 class="text-xl text-white font-bold mb-4">Programming Languages</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 bg-dark rounded-md border border-gray-700 text-neon text-sm border-b border-b-neon/30">C</span>
+                        <span
+                            class="px-3 py-1 bg-dark rounded-md border border-gray-700 text-neon text-sm border-b border-b-neon/30">C++</span>
+                        <span
+                            class="px-3 py-1 bg-dark rounded-md border border-gray-700 text-neon text-sm border-b border-b-neon/30">Java</span>
+                        <span
+                            class="px-3 py-1 bg-dark rounded-md border border-gray-700 text-neon text-sm border-b border-b-neon/30">JavaScript</span>
+                    </div>
+                </div>
+
+
+                <div
+                    class="bg-darker p-8 rounded-xl border border-gray-800 hover:border-neon transition-all duration-300 group hover:-translate-y-2 glow-on-hover">
+                    <div
+                        class="w-12 h-12 rounded-full bg-dark flex items-center justify-center mb-6 border border-gray-700 group-hover:border-neon transition-colors">
+                        <i class="fas fa-laptop-code text-xl text-gray-400 group-hover:text-neon"></i>
+                    </div>
+                    <h3 class="text-xl text-white font-bold mb-4">Web Technology</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 bg-dark rounded-md border border-gray-700 text-neon text-sm border-b border-b-neon/30">HTML</span>
+                        <span
+                            class="px-3 py-1 bg-dark rounded-md border border-gray-700 text-neon text-sm border-b border-b-neon/30">CSS</span>
+                        <span
+                            class="px-3 py-1 bg-dark rounded-md border border-gray-700 text-neon text-sm border-b border-b-neon/30">Tailwind
+                            CSS</span>
+                        <span
+                            class="px-3 py-1 bg-dark rounded-md border border-gray-700 text-neon text-sm border-b border-b-neon/30">Node.js</span>
+                        <span
+                            class="px-3 py-1 bg-dark rounded-md border border-gray-700 text-neon text-sm border-b border-b-neon/30">React.js</span>
+                    </div>
+                </div>
+
+
+                <div
+                    class="bg-darker p-8 rounded-xl border border-gray-800 hover:border-neon transition-all duration-300 group hover:-translate-y-2 glow-on-hover">
+                    <div
+                        class="w-12 h-12 rounded-full bg-dark flex items-center justify-center mb-6 border border-gray-700 group-hover:border-neon transition-colors">
+                        <i class="fas fa-database text-xl text-gray-400 group-hover:text-neon"></i>
+                    </div>
+                    <h3 class="text-xl text-white font-bold mb-4">Databases</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 bg-dark rounded-md border border-gray-700 text-neon text-sm border-b border-b-neon/30">MySQL</span>
+                        <span
+                            class="px-3 py-1 bg-dark rounded-md border border-gray-700 text-neon text-sm border-b border-b-neon/30">MongoDB</span>
+                        <span
+                            class="px-3 py-1 bg-dark rounded-md border border-gray-700 text-neon text-sm border-b border-b-neon/30">PSQL</span>
+                    </div>
+                </div>
+
+
+                <div
+                    class="bg-darker p-8 rounded-xl border border-gray-800 hover:border-neon transition-all duration-300 group hover:-translate-y-2 glow-on-hover">
+                    <div
+                        class="w-12 h-12 rounded-full bg-dark flex items-center justify-center mb-6 border border-gray-700 group-hover:border-neon transition-colors">
+                        <i class="fas fa-tools text-xl text-gray-400 group-hover:text-neon"></i>
+                    </div>
+                    <h3 class="text-xl text-white font-bold mb-4">Tools & Technologies</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 bg-dark rounded-md border border-gray-700 text-neon text-sm border-b border-b-neon/30">Git</span>
+                        <span
+                            class="px-3 py-1 bg-dark rounded-md border border-gray-700 text-neon text-sm border-b border-b-neon/30">GitHub</span>
+                        <span
+                            class="px-3 py-1 bg-dark rounded-md border border-gray-700 text-neon text-sm border-b border-b-neon/30">XAMPP</span>
+                        <span
+                            class="px-3 py-1 bg-dark rounded-md border border-gray-700 text-neon text-sm border-b border-b-neon/30">Postman</span>
+                        <span
+                            class="px-3 py-1 bg-dark rounded-md border border-gray-700 text-neon text-sm border-b border-b-neon/30">VS
+                            Code</span>
+                    </div>
+                </div>
+
+
+                <div
+                    class="bg-darker p-8 rounded-xl border border-gray-800 hover:border-neon transition-all duration-300 group hover:-translate-y-2 glow-on-hover">
+                    <div
+                        class="w-12 h-12 rounded-full bg-dark flex items-center justify-center mb-6 border border-gray-700 group-hover:border-neon transition-colors">
+                        <i class="fab fa-linux text-xl text-gray-400 group-hover:text-neon"></i>
+                    </div>
+                    <h3 class="text-xl text-white font-bold mb-4">Operating Systems</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 bg-dark rounded-md border border-gray-700 text-neon text-sm border-b border-b-neon/30">Linux</span>
+                        <span
+                            class="px-3 py-1 bg-dark rounded-md border border-gray-700 text-neon text-sm border-b border-b-neon/30">Windows</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-darker relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-16"><span class="text-neon">02.</span> Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-container">
+
+            </div>
+        </div>
+    </section>
+    <section id="achievements" class="py-24 bg-dark relative border-y border-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-16"><span class="text-neon">03.</span> Achievements</h2>
+            <div class="max-w-4xl mx-auto">
+                <div
+                    class="relative pl-8 sm:pl-32 py-6 border-l-2 border-neon/30 hover:border-neon transition-colors duration-300">
+                    <div
+                        class="absolute w-4 h-4 rounded-full bg-neon -left-[9px] top-8 shadow-[0_0_10px_rgba(6,182,212,1)]">
+                    </div>
+                    <div
+                        class="hidden sm:block absolute left-0 top-7 -translate-x-full pr-8 text-neon font-mono text-sm">
+                        Feb 2026</div>
+                    <h3 class="text-2xl font-bold text-white mb-2">500+ Coding Problems Solved</h3>
+                    <p class="text-gray-400 leading-relaxed">Consistently solved over 500 complex algorithmic and data
+                        structure problems across various platforms including
+                        <a href="https://leetcode.com/u/DIKSHA__RANI/" target="_blank"
+                            class="text-neon hover:text-white hover:underline transition-colors"><strong
+                                class="text-gray-300 hover:text-white">LeetCode</strong></a> and
+                        <a href="https://www.geeksforgeeks.org/profile/dilipdiksha2004" target="_blank"
+                            class="text-neon hover:text-white hover:underline transition-colors"><strong
+                                class="text-gray-300 hover:text-white">GeeksforGeeks (GFG)</strong></a>.
+                    </p>
+                </div>
+                <div
+                    class="relative pl-8 sm:pl-32 py-6 border-l-2 border-neon/30 hover:border-neon transition-colors duration-300">
+                    <div
+                        class="absolute w-4 h-4 rounded-full bg-neon -left-[9px] top-8 shadow-[0_0_10px_rgba(6,182,212,1)]">
+                    </div>
+                    <div
+                        class="hidden sm:block absolute left-0 top-7 -translate-x-full pr-8 text-neon font-mono text-sm">
+                        Dec 2025</div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Patent Published</h3>
+                    <p class="text-gray-400 leading-relaxed"><strong class="text-gray-300">Automatic Stream Changeover
+                            for Flow Metering (App No. <a
+                                href="https://iprsearch.ipindia.gov.in/PublicSearch/PublicationSearch/ApplicationStatus"
+                                target="_blank" onclick="navigator.clipboard.writeText('202511095367');"
+                                class="text-neon hover:text-white hover:underline cursor-pointer transition-all duration-300"
+                                title="Click to copy application number and open search portal">202511095367</a>)</strong><br>Developed
+                        an automated fluid stream changeover system using real-time level sensing with manual and
+                        automatic control for reliable flow regulation.</p>
+                </div>
+
+
+
+                <div
+                    class="relative pl-8 sm:pl-32 py-6 border-l-2 border-neon/30 hover:border-neon transition-colors duration-300">
+                    <div
+                        class="absolute w-4 h-4 rounded-full bg-neon -left-[9px] top-8 shadow-[0_0_10px_rgba(6,182,212,1)]">
+                    </div>
+                    <div
+                        class="hidden sm:block absolute left-0 top-7 -translate-x-full pr-8 text-neon font-mono text-sm">
+                        Mar 2024</div>
+                    <div class="flex flex-wrap items-center justify-between gap-4 mb-2">
+                        <h3 class="text-2xl font-bold text-white">Web Development Hackathon</h3>
+                        <a href="assets/certs/hackathon.pdf" target="_blank"
+                            class="inline-flex items-center gap-2 px-3 py-1 rounded border border-neon/50 text-neon hover:bg-neon hover:text-darker transition-all text-sm font-medium">
+                            <i class="fas fa-certificate"></i> View Certificate
+                        </a>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">Competed in the Web Development Hackathon as part of a
+                        4-member team, distinguishing ourselves and standing out among <strong class="text-gray-300">800
+                            students</strong> in the <strong class="text-gray-300">Binary Blitz</strong> competition.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="certificates" class="py-24 bg-darker relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-6"><span class="text-neon">04.</span> Certificates</h2>
+            <p class="text-center text-gray-400 mb-16 max-w-2xl mx-auto">
+                My technical certifications and continuous learning paths. You can easily add and download certificates
+                from this section.
+            </p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" id="certificates-container">
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-24 bg-dark relative">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6"><span class="text-neon">05.</span> Get In Touch</h2>
+            <p class="text-gray-400 mb-12 text-lg">
+                I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll
+                try my best to get back to you!
+            </p>
+
+            <form id="contact-form"
+                class="space-y-6 text-left bg-darker p-8 rounded-xl border border-gray-800 shadow-2xl relative group">
+                <div
+                    class="absolute -inset-0.5 bg-gradient-to-r from-neon to-purple-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-1000">
+                </div>
+
+                <!-- Anti-spam / Hidden settings for FormSubmit -->
+                <input type="hidden" name="_subject" value="New message from Portfolio!">
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="relative z-10 grid md:grid-cols-2 gap-6">
+                    <div class="relative">
+                        <input type="text" name="name" id="name"
+                            class="w-full bg-dark bg-opacity-50 border border-gray-700 rounded-lg px-4 pt-6 pb-2 text-white focus:outline-none focus:border-neon focus:ring-1 focus:ring-neon transition-all peer"
+                            placeholder=" " required>
+                        <label for="name"
+                            class="absolute left-4 top-4 text-gray-500 text-sm transition-all duration-300 peer-placeholder-shown:text-base peer-placeholder-shown:top-4 peer-focus:top-1.5 peer-focus:text-xs peer-focus:text-neon peer-valid:top-1.5 peer-valid:text-xs peer-valid:text-gray-400 pointer-events-none">Your
+                            Name</label>
+                    </div>
+                    <div class="relative">
+                        <input type="email" name="email" id="email"
+                            class="w-full bg-dark bg-opacity-50 border border-gray-700 rounded-lg px-4 pt-6 pb-2 text-white focus:outline-none focus:border-neon focus:ring-1 focus:ring-neon transition-all peer"
+                            placeholder=" " required>
+                        <label for="email"
+                            class="absolute left-4 top-4 text-gray-500 text-sm transition-all duration-300 peer-placeholder-shown:text-base peer-placeholder-shown:top-4 peer-focus:top-1.5 peer-focus:text-xs peer-focus:text-neon peer-valid:top-1.5 peer-valid:text-xs peer-valid:text-gray-400 pointer-events-none">Email
+                            Address</label>
+                    </div>
+                </div>
+
+                <div class="relative z-10">
+                    <textarea name="message" id="message" rows="5"
+                        class="w-full bg-dark bg-opacity-50 border border-gray-700 rounded-lg px-4 pt-6 pb-2 text-white focus:outline-none focus:border-neon focus:ring-1 focus:ring-neon transition-all peer resize-none"
+                        placeholder=" " required></textarea>
+                    <label for="message"
+                        class="absolute left-4 top-4 text-gray-500 text-sm transition-all duration-300 peer-placeholder-shown:text-base peer-placeholder-shown:top-4 peer-focus:top-1.5 peer-focus:text-xs peer-focus:text-neon peer-valid:top-1.5 peer-valid:text-xs peer-valid:text-gray-400 pointer-events-none">Your
+                        Message</label>
+                </div>
+
+                <div class="relative z-10 text-center">
+                    <button type="submit"
+                        class="w-full md:w-auto px-10 py-4 rounded-lg border-2 border-neon text-neon font-medium text-lg hover:bg-neon hover:text-darker hover:shadow-[0_0_20px_rgba(6,182,212,0.5)] transition-all duration-300">
+                        Send Message
+                    </button>
+                    <div class="mt-8 flex items-center justify-center gap-4 text-gray-500">
+                        <span class="h-px w-12 bg-gray-700"></span>
+                        <span>or connect directly</span>
+                        <span class="h-px w-12 bg-gray-700"></span>
+                    </div>
+
+                    <div class="flex flex-wrap justify-center gap-6 mt-6">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dilipdiksha2004@gmail.com"
+                            target="_blank"
+                            class="flex items-center gap-2 text-gray-400 hover:text-neon transition-colors duration-300 group">
+                            <div
+                                class="w-10 h-10 rounded-full bg-dark flex items-center justify-center border border-gray-700 group-hover:border-neon group-hover:shadow-[0_0_15px_rgba(6,182,212,0.3)] transition-all">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <span class="hidden sm:inline">Gmail</span>
+                        </a>
+                        <a href="tel:+919153308232"
+                            class="flex items-center gap-2 text-gray-400 hover:text-neon transition-colors duration-300 group">
+                            <div
+                                class="w-10 h-10 rounded-full bg-dark flex items-center justify-center border border-gray-700 group-hover:border-neon group-hover:shadow-[0_0_15px_rgba(6,182,212,0.3)] transition-all">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <span class="hidden sm:inline">Phone</span>
+                        </a>
+                        <a href="https://linkedin.com/in/diksha-ranii" target="_blank"
+                            class="flex items-center gap-2 text-gray-400 hover:text-neon transition-colors duration-300 group">
+                            <div
+                                class="w-10 h-10 rounded-full bg-dark flex items-center justify-center border border-gray-700 group-hover:border-neon group-hover:shadow-[0_0_15px_rgba(6,182,212,0.3)] transition-all">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <span class="hidden sm:inline">LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/dik2004" target="_blank"
+                            class="flex items-center gap-2 text-gray-400 hover:text-neon transition-colors duration-300 group">
+                            <div
+                                class="w-10 h-10 rounded-full bg-dark flex items-center justify-center border border-gray-700 group-hover:border-neon group-hover:shadow-[0_0_15px_rgba(6,182,212,0.3)] transition-all">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <span class="hidden sm:inline">GitHub</span>
+                        </a>
+                    </div>
+
+                    <div class="mt-8 flex items-center justify-center gap-4 text-gray-500">
+                        <span class="h-px w-12 bg-gray-700"></span>
+                        <span>coding platforms</span>
+                        <span class="h-px w-12 bg-gray-700"></span>
+                    </div>
+
+                    <div class="flex flex-wrap justify-center gap-6 mt-6">
+                        <a href="https://leetcode.com/u/DIKSHA__RANI/" target="_blank"
+                            class="flex items-center gap-2 text-gray-400 hover:text-neon transition-colors duration-300 group">
+                            <div
+                                class="w-10 h-10 rounded-full bg-dark flex items-center justify-center border border-gray-700 group-hover:border-neon group-hover:shadow-[0_0_15px_rgba(6,182,212,0.3)] transition-all">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <span class="hidden sm:inline">LeetCode</span>
+                        </a>
+                        <a href="https://www.geeksforgeeks.org/profile/dilipdiksha2004" target="_blank"
+                            class="flex items-center gap-2 text-gray-400 hover:text-neon transition-colors duration-300 group">
+                            <div
+                                class="w-10 h-10 rounded-full bg-dark flex items-center justify-center border border-gray-700 group-hover:border-neon group-hover:shadow-[0_0_15px_rgba(6,182,212,0.3)] transition-all">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <span class="hidden sm:inline">GFG</span>
+                        </a>
+                        <a href="https://www.hackerrank.com/profile/dilipdiksha2004" target="_blank"
+                            class="flex items-center gap-2 text-gray-400 hover:text-neon transition-colors duration-300 group">
+                            <div
+                                class="w-10 h-10 rounded-full bg-dark flex items-center justify-center border border-gray-700 group-hover:border-neon group-hover:shadow-[0_0_15px_rgba(6,182,212,0.3)] transition-all">
+                                <i class="fab fa-hackerrank"></i>
+                            </div>
+                            <span class="hidden sm:inline">HackerRank</span>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-darker py-8 border-t border-gray-800 text-center">
+        <div class="flex justify-center space-x-6 mb-4">
+            <a href="https://github.com/dik2004"
+                class="text-gray-400 hover:text-neon transition-colors duration-300 transform hover:scale-110"><i
+                    class="fab fa-github text-2xl"></i></a>
+            <a href="https://linkedin.com/in/diksha-ranii"
+                class="text-gray-400 hover:text-neon transition-colors duration-300 transform hover:scale-110"><i
+                    class="fab fa-linkedin text-2xl"></i></a>
+        </div>
+        <p class="text-gray-500 text-sm">
+            @2026 copyright reserved by <span class="text-neon">Diksha Rani</span>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
