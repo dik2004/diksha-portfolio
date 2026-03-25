@@ -12,4 +12,4 @@
 - Flow Metering System
 
 ## Live Website
-https://dik2004.github.io/diksha-portfolio/
+diksha-portfolio-5qzjcf6o7-dilipdiksha2004-2558s-projects.vercel.app
